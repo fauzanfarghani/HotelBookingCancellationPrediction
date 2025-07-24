@@ -1,0 +1,13 @@
+Soal dan Jawaban:
+
+1. Jelaskan latar belakang adanya bagging dan cara kerja bagging !
+
+Jawaban: Bagging dikembangkan untuk mengurangi varians dan overfitting pada model dengan melatih beberapa model pada subset data acak dan menggabungkan prediksi. Cara Kerjanya adalah mengambil bootstrap samples, latih model dasar secara independen, dan agregasi prediksi.
+
+2. Jelaskan perbedaan cara kerja algoritma Random Forest dengan algoritma boosting yang Anda pilih !
+
+Jawaban: Random Forest bersifat paralel karena menggunakan bootstrap sampling dan random feature selection, mengurangi varians, agregasi via majority voting sedangkan XGBoost bersifat Sekuensial, memperbaiki kesalahan pohon sebelumnya, mengurangi bias, agregasi via jumlah tertimbang, sehingga XGBoost lebih sensitif terhadap tuning.
+
+3. Jelaskan apa yang dimaksud dengan Cross Validation !
+
+Jawaban: Cross Validation adalah teknik untuk mengukur performa model dengan membagi data menjadi k fold, melatih pada k-1 fold, dan memvalidasi pada 1 fold, diulang k kali, lalu merata-ratakan metrik untuk estimasi performa yang andal. Kegunaannya adalah untuk mendapatkan estimasi performa model yang lebih akurat dan robust dibandingkan hanya menggunakan satu set validasi, hal ini juga membantu memilih model dan hyperparameter terbaik, serta mendeteksi overfitting.

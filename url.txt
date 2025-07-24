@@ -1,0 +1,3 @@
+link HuggingFace(Deployment): https://huggingface.co/spaces/fauzanfarghani/M2HotelCancellationPrediction
+
+link dataset(Kaggle): https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset
