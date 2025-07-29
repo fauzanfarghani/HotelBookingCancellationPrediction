@@ -3,12 +3,12 @@
 ## Repository Outline
 Berikut adalah isi dari file yang ada di repository ini:
 
-1. description.md - Penjelasan gambaran umum proyek.
-2. P1M2_fauzan_farghani_inf.ipynb - Notebook yang berisi proses pengembangan model machine learning untuk prediksi pembatalan reservasi hotel, termasuk eksplorasi data, feature engineering, pemodelan, evaluasi, dan hyperparameter tuning.
-3. P1M2_fauzan_farghani_inf.ipynb - Notebook untuk inference, digunakan untuk menguji prediksi pembatalan reservasi hotel menggunakan model Random Forest yang telah dituning.
+1. README.md - Penjelasan gambaran umum proyek.
+2. Notebook.ipynb - Notebook yang berisi proses pengembangan model machine learning untuk prediksi pembatalan reservasi hotel, termasuk eksplorasi data, feature engineering, pemodelan, evaluasi, dan hyperparameter tuning.
+3. inf.ipynb - Notebook untuk inference, digunakan untuk menguji prediksi pembatalan reservasi hotel menggunakan model Random Forest yang telah dituning.
 4. rf_tuned_pipeline.pkl - File model Random Forest yang telah dituning dan disimpan untuk keperluan prediksi.
 5. Hotel_Reservations.csv - Dataset yang digunakan untuk Project ini.
-6. P1M2_fauzan_farghani_conceptual.txt - informasi umum terkait cara kerja Cross Validation, Random Forest Algorithm dan bagging.
+6. conceptual.txt - informasi umum terkait cara kerja Cross Validation, Random Forest Algorithm dan bagging.
 7. url.txt - URL Dataset dan URL deployment
 8. file src - source code yang digunakan untuk deployment, berisikan app.py, eda.py, prediction.py, csv dataset dan model yang telah didefinisikan di nomor 4 dan 5.
 9. app.py - main program untuk menjalankan website yang telah dideploy
@@ -32,7 +32,7 @@ Data yang digunakan adalah dataset `Hotel_Reservations.csv` yang berisi informas
   - Fitur numerik (contoh: `lead_time`, `avg_price_per_room`) dan kategorik (contoh: `type_of_meal_plan`, `market_segment_type`).
   - Tidak ada informasi missing values dalam notebook, tetapi tetap dilakukan pemeriksaan nilai hilang.
   - Target: `booking_status` (Not_Canceled, Canceled).
-- **Sumber data**: Tidak disebutkan secara spesifik, tetapi diasumsikan berasal dari dataset publik atau internal.
+- **Sumber data**: https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset
 
 ## Method
 Metode yang digunakan adalah **supervised learning** dengan pendekatan klasifikasi. Model utama yang dipilih adalah **Random Forest** setelah membandingkan performa dengan model lain seperti KNN, SVC, Decision Tree, dan XGBoost. Proses pengembangan meliputi:
